@@ -95,7 +95,7 @@ My pipeline consists of following steps:
 
 ![challangeStacked][stackedchallenge2]
 
-###### Here is a [link](https://youtu.be/-QkNjW-tDrk) to check out how my pipeline performed on challenge video. Stacked version can be also found [here](https://youtu.be/0OmXC_0mDxI).
+Here is a [link](https://youtu.be/-QkNjW-tDrk) to check out how my pipeline performed on challenge video. Stacked version can be also found [here](https://youtu.be/0OmXC_0mDxI).
 
 ---
 ### 2. Potential shortcomings
