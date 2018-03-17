@@ -1,6 +1,6 @@
 import cv2
 import math
-from Lesson_2_Finding_Lane_Lanes import Constants as const
+from IDE_Version import Constants as const
 import matplotlib.pyplot as plt
 import numpy as np
 
