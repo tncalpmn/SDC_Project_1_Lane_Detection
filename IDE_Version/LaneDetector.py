@@ -65,7 +65,7 @@ def saveTestImages(stacked = False):
                 path = eachKey + "/" + imgName
                 image = mpimg.imread(path)
                 finalImage = applyPipeline(image,stacked)
-                cv2.imwrite('../test_images_output/' + imgName + '_TEST', cv2.cvtColor(finalImage, cv2.COLOR_RGB2BGR)) # OpenCV uses defaut BGR Scale, has to be convertet to RGB
+                cv2.imwrite('../test_images_output/' + imgName, cv2.cvtColor(finalImage, cv2.COLOR_RGB2BGR)) # OpenCV uses defaut BGR Scale, has to be convertet to RGB
 
 def saveTestVideos():
     allVideos= os.listdir("../test_videos/")
@@ -78,4 +78,4 @@ def saveTestVideos():
 
 # Main
 #saveTestImages()
-saveTestVideos()
+#saveTestVideos()
