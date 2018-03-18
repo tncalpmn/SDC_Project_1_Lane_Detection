@@ -77,5 +77,5 @@ def saveTestVideos():
         challenge_clip.write_videofile(outputFile, audio=False)
 
 # Main
-#saveTestImages()
+saveTestImages()
 #saveTestVideos()

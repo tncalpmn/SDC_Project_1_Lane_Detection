@@ -62,8 +62,6 @@ def converToHSV(image):
 
 def showRegionOfInterest(image, vertices):
 
-    print(image.shape)
-
     x, y = [], []
     for ver in vertices:
         x = x + [ver[0]]
@@ -184,18 +182,4 @@ def showAndSave(image, imgName):
     saveTo = 'test_images_output/' + imgName
     plt.axis('off')
     plt.savefig(saveTo, bbox_inches='tight')
-    plt.show()
-
-def showRegionOfInterest(image, coordinates):
-    x, y = [], []
-    for cor in coordinates:
-        x = x + [cor[0]]
-        y = y + [cor[1]]
-
-    x = x + [coordinates[0][0]]
-    y = y + [coordinates[0][1]]
-
-    plt.imshow(image)
-    plt.plot(x, y, 'b--', lw=2)
-    plt.title('Region of Interest')
     plt.show()

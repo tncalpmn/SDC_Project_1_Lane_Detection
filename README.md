@@ -93,7 +93,8 @@ My pipeline consists of following steps:
 
 10. So is per each frame a lane is detected. Although the lines seem nice in the images, in the videos they look a bit unsteady since each frame has its own line fit. To avoid that I saved the line information from last 10 frame in to a double sided buffer and first I took the average of these parameters then draw resulting lines on the original image. Thus, I achieved a smooth and robust lane detection.
 
-![challangeStacked][stackedchallenge2]
+![challangeStacked][allTogether]
+
 
 Here is a [link](https://youtu.be/-QkNjW-tDrk) to check out how my pipeline performed on challenge video. Stacked version can be also found [here](https://youtu.be/0OmXC_0mDxI).
 
@@ -114,5 +115,7 @@ All that said, this is a very naive approach to detect Lines. For every differen
 * Rather than deterministic approach, more probabilistic approach could be used to fit lines in all kind of circumstances, for example with machine learning techniques.
 
 * Lines could be fit non-linearly, especially when the vehicle turns.
+* For sake of car to know what kind of lines are detected, for instance dashed or straight line, lanes could be drawn either in different colours or in dashed/straight way. So the car would know if it can overtake a car in front of it.
 
 [stackedchallenge2]: ./test_images_output/Challenge_2_Stacked.jpg "ChallengeStacked"
+[allTogether]: ./test_images_output/GitHub_Documentation/allTogether.jpg "ChallengeStacked"
